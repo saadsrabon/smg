@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+import { missions } from '../pages/About';
+import { Link } from 'react-router-dom';
 
 const features = [
   { icon: '📚', title: 'Education' },
@@ -24,22 +26,22 @@ const Mission = () => {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
       >
-        Empowering individuals, fostering collaboration, and creating sustainable, thriving futures.
+       Our mission is to ignite the potential of underserved communities by empowering individuals, fostering collaboration, and creating sustainable, thriving futures through:
       </motion.p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
-        {features.map(({ icon, title }, i) => (
-          <motion.div
-            key={i}
-            className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition"
-            whileHover={{ scale: 1.05 }}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.1 }}
-          >
-            <div className="text-4xl mb-3">{icon}</div>
-            <h4 className="font-semibold text-xl">{title}</h4>
-          </motion.div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 container mx-auto">
+        {missions.map(({ title, description, image, to }) => (
+          <Link to={to} key={title} className="group">
+            <div className="bg-white rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+              <img src={image} alt={title} className="h-40 w-full object-cover" />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+                <p className="text-sm text-gray-600 group-hover:text-gray-800 transition">
+                  {description}
+                </p>
+              </div>
+            </div>
+          </Link>
         ))}
       </div>
     </section>
