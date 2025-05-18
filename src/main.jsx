@@ -5,11 +5,9 @@ import App from './App.jsx'
 import { RouterProvider } from 'react-router-dom'
 import router from './routes/router';
 import Navbar from './components/Navbar.jsx'
-
+import ScrollToTop from './shared/ScrollToTop.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ScrollToTop />
-    <Navbar/>
-   <RouterProvider router ={router} />
+   <App/>
   </StrictMode>,
 )
