@@ -1,27 +1,63 @@
-import React from 'react';
+import 'keen-slider/keen-slider.min.css';
+import { useKeenSlider } from 'keen-slider/react';
+import { useEffect, useRef, useState } from 'react';
+import rickshaw from '../assets/rickshaw.png';
+import doctor from '../assets/doctor.jpg';
+import vogdaburi from '../assets/Vogdaburi_cummunity_center.jpg';
+import logo from '../assets/Shomajgori_Logo_1.jpeg';
 
 const Hero = () => {
+    const intervalRef = useRef(null);
+  const [sliderRef, instanceRef] = useKeenSlider({
+    loop: true,
+    slides: { perView: 1 },
+    duration: 100,
+    created: () => {
+      clearInterval(intervalRef.current);
+      intervalRef.current = setInterval(() => {
+        if (instanceRef.current) {
+          instanceRef.current.next();
+        }
+      }, 4000); // Change slide every 4 seconds
+    },
+  });
+
+  const images = [
+    rickshaw
+    ,doctor
+    ,vogdaburi
+  ];
+
+   // Clean up interval on unmount
+  useEffect(() => {
+    return () => clearInterval(intervalRef.current);
+  }, []);
+
   return (
-    <section className="relative bg-white">
-      <img
-        src="/assets/Vogdaburi_cummunity_center.jpg"
-        alt="SHOMAJGORI Foundation Hero"
-        className="w-full h-[50vh] object-cover object-center rounded-b-2xl shadow-lg"
-      />
-      <div className="absolute inset-0 bg-black/30 flex flex-col justify-center items-center text-white text-center px-4">
-        <img
-          src="/assets/Shomajgori_Logo_1.jpeg"
-          alt="Shomajgori Logo"
-          className="w-24 h-24 rounded-full mb-4 border-2 border-white shadow-lg"
-        />
-        <h1 className="text-3xl md:text-4xl font-bold max-w-3xl">
-          🏗️🌱🌍 Laying the Foundation for Smarter Futures
-        </h1>
-        <p className="mt-2 text-base md:text-lg max-w-xl">
-          SHOMAJGORI Foundation: Empowering Communities for Sustainable Change
-        </p>
-      </div>
-    </section>
+    <div ref={sliderRef} className="keen-slider h-[50vh] md:h-[70vh] relative">
+      {images.map((src, i) => (
+        <div
+          key={i}
+          className="keen-slider__slide flex items-center justify-center bg-black/40 relative"
+        >
+          <img src={src} className="absolute inset-0 object-cover w-full h-full" alt="" />
+            <div className="absolute inset-0 bg-black opacity-24"></div>
+          <div className="relative z-10 text-center text-white px-6">
+            <img
+              src={logo}
+              alt="Logo"
+              className="mx-auto w-28 h-28 rounded-full mb-4 shadow-md border"
+            />
+            <h1 className="text-3xl md:text-5xl font-bold max-w-3xl">
+              Laying the Foundation for Smarter Futures
+            </h1>
+            <p className="mt-3 text-lg md:text-xl">
+              Empowering Communities for Sustainable Change
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
   );
 };
 
