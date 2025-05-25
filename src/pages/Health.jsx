@@ -10,7 +10,7 @@ const Health = () => {
                   <div className="absolute -top-2 -left-4 w-10 h-10 bg-yellow-200 rounded-full opacity-30"></div>
                   <div className="absolute -bottom-2 -right-4 w-12 h-12 bg-blue-200 rounded-full opacity-30"></div>
                   <h1 className="text-5xl font-bold mb-4 text-blue-800 relative z-10">
-                    <span className="inline-block mr-3">📚</span>
+                    <span className="inline-block mr-3">🏥</span>
                     Health & Wellness Camp
                   </h1>
                   <div className="w-24 h-1 bg-blue-400 mx-auto mt-4 rounded-full"></div>
