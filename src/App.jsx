@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import { Children } from 'react';
 import Education from './pages/Education';
+import Health from './pages/Health';
 
 // etc...
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />}/>
           <Route path="/about/education" element={<Education />} />
+          <Route path="/about/health" element={<Health/>} />
     
        
           {/* Add more routes here */}
