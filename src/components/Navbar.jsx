@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import logo from "../assets/Shomajgori_Logo_1.jpeg"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <img src="/assets/Shomajgori_Logo_1.jpeg" alt="Logo" className="w-10 h-10 rounded-full" />
+          <img src={logo} alt="Logo" className="w-10 h-10 rounded-full" />
           <h1 className="font-bold text-lg tracking-tight text-gray-800">SHOMAJGORI</h1>
         </div>
 
