@@ -1,4 +1,7 @@
 import React from 'react';
+import Health from '../assets/WeeklyPrimaryHealth.jpg'
+import Education from "../assets/WeeklyEducation.proggram.webp"
+import Economic from "../assets/FCABSiteVisitMeetingDirector_Sep2022_29.webp"
 
 const CommunittyProgress = () => {
 
@@ -9,7 +12,15 @@ const CommunittyProgress = () => {
             progress: 78,
             milestones: ["Mobile clinic established", "500+ villagers screened", "Health education workshops"],
             challenges: ["Limited local healthcare workers", "Cultural barriers to modern medicine"],
-            image: "/health-initiative.jpg"
+            image: Health
+        },
+         {
+            category: "Economic Development",
+            title: "Agricultural Co-op Program",
+            progress: 65,
+            milestones: ["50 farmers trained", "New irrigation system", "Market access established"],
+            challenges: ["Climate variability", "Startup equipment costs"],
+            image: Economic
         },
         {
             category: "Education",
@@ -17,16 +28,9 @@ const CommunittyProgress = () => {
             progress: 92,
             milestones: ["3 classrooms built", "120 children enrolled", "Adult literacy program launched"],
             challenges: ["Teacher retention", "After-school transportation"],
-            image: "/education-center.jpg"
+            image: Education
         },
-        {
-            category: "Economic Development",
-            title: "Agricultural Co-op Program",
-            progress: 65,
-            milestones: ["50 farmers trained", "New irrigation system", "Market access established"],
-            challenges: ["Climate variability", "Startup equipment costs"],
-            image: "/agriculture-program.jpg"
-        }
+       
     ];
     return (
         <section className="py-16 px-4 bg-gradient-to-b from-white to-green-50">
