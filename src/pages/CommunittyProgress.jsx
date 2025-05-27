@@ -2,6 +2,7 @@ import React from 'react';
 import Health from '../assets/WeeklyPrimaryHealth.jpg'
 import Education from "../assets/WeeklyEducation.proggram.webp"
 import Economic from "../assets/FCABSiteVisitMeetingDirector_Sep2022_29.webp"
+import { Link } from 'react-router-dom';
 
 const CommunittyProgress = () => {
 
@@ -14,13 +15,20 @@ const CommunittyProgress = () => {
             challenges: ["Limited local healthcare workers", "Cultural barriers to modern medicine"],
             image: Health
         },
-         {
-            category: "Economic Development",
-            title: "Agricultural Co-op Program",
-            progress: 65,
-            milestones: ["50 farmers trained", "New irrigation system", "Market access established"],
-            challenges: ["Climate variability", "Startup equipment costs"],
-            image: Economic
+        {
+            category: "Women's Empowerment",
+            title: "Entrepreneurship Program",
+            progress: 72,
+            milestones: [
+                "120 women trained in business skills",
+                "35 micro-enterprises launched",
+                "Digital literacy workshops conducted"
+            ],
+            challenges: [
+                "Access to startup capital",
+                "Balancing domestic responsibilities"
+            ],
+            image: Economic 
         },
         {
             category: "Education",
@@ -30,7 +38,7 @@ const CommunittyProgress = () => {
             challenges: ["Teacher retention", "After-school transportation"],
             image: Education
         },
-       
+
     ];
     return (
         <section className="py-16 px-4 bg-gradient-to-b from-white to-green-50">
@@ -152,9 +160,12 @@ const CommunittyProgress = () => {
                     <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
                         View detailed reports with impact metrics, success stories, and ongoing challenges for each program.
                     </p>
-                    <button className="px-8 py-3 bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white font-medium rounded-lg shadow-md transition-all">
-                        View Program Reports →
-                    </button>
+                    <Link to={'/progressGallery'}>
+                        <button className="px-8 py-3 bg-blue-500 text-white font-medium rounded-lg shadow-md transition-all">
+                            View Program Reports →
+                        </button>
+                    </Link>
+
                 </div>
             </div>
         </section>

@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import Mission from '../components/Mission'
 import ProgressReport from './ProgressReport'
 import CommunittyProgress from './CommunittyProgress'
+import CommunityCenter from './CommunityCenter'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
     <Mission/>
     <ProgressReport/>
     <CommunittyProgress/>
+    <CommunityCenter/>
     </>
   )
 }

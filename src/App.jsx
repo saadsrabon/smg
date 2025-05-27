@@ -7,6 +7,8 @@ import Education from './pages/Education';
 import Health from './pages/Health';
 import SocialEngadement from './pages/SocialEngadement';
 import Economic from './pages/Economic';
+import ProgressGallery from './pages/ProgressGallery';
+import CommunityCenter from './pages/CommunityCenter';
 
 // etc...
 
@@ -22,6 +24,8 @@ function App() {
           <Route path="/about/health" element={<Health/>} />
           <Route path="/about/engagement" element={<SocialEngadement/>} />
           <Route path="/about/economy" element={<Economic/>} />
+          <Route path="/progressGallery" element={<ProgressGallery/>} />
+          <Route path="/communityCenter" element={<CommunityCenter/>} />
     
        
           {/* Add more routes here */}
