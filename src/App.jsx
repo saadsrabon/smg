@@ -10,6 +10,7 @@ import Economic from './pages/Economic';
 import ProgressGallery from './pages/ProgressGallery';
 import CommunityCenter from './pages/CommunityCenter';
 import ExploreVCC from './pages/ExploreVCC';
+import ConstructionGallery from './pages/ConstructionGallery';
 
 // etc...
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/progressGallery" element={<ProgressGallery/>} />
           <Route path="/communityCenter" element={<CommunityCenter/>} />
           <Route path="/communityCenter/exploreVCC" element={<ExploreVCC/>} />
+          <Route path="/constructionGallery" element={<ConstructionGallery/>} />
     
        
           {/* Add more routes here */}

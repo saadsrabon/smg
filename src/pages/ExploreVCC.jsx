@@ -1,5 +1,6 @@
 import React from 'react';
 import Explorevcc from '../assets/progressGallery/exploreVCC.webp'
+import { Link } from 'react-router-dom';
 
 const ExploreVCC = () => {
     return (
@@ -17,7 +18,7 @@ const ExploreVCC = () => {
                 </p>
                 <div className="w-24 h-1 bg-gradient-to-r from-green-400 to-yellow-400 mx-auto rounded-full"></div>
             </div>
-            
+
             {/* Big Image */}
 
             <div className="max-w-3xl mx-auto px-4 my-12">
@@ -29,7 +30,7 @@ const ExploreVCC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
 
-                    
+
                     <div className="absolute bottom-4 left-4 text-white">
                         <p className="text-sm font-medium bg-green-600/90 px-3 py-1 rounded-full inline-block">
                             VCC Construction Progress
@@ -130,14 +131,16 @@ const ExploreVCC = () => {
                                 <span>Local labor empowerment</span>
                             </li>
                         </ul>
-                        <a
-                            href="https://www.notion.so/13dc08499b5281549f44fa415fbbb03e"
-                            className="inline-block mt-6 px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg shadow-md transition-colors"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Explore Full Timeline
-                        </a>
+                        <Link to={'/constructionGallery'}>
+                            <button
+                                href=""
+                                className="inline-block mt-6 px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg shadow-md transition-colors"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Explore Full Timeline
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>
