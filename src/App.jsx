@@ -9,6 +9,7 @@ import SocialEngadement from './pages/SocialEngadement';
 import Economic from './pages/Economic';
 import ProgressGallery from './pages/ProgressGallery';
 import CommunityCenter from './pages/CommunityCenter';
+import ExploreVCC from './pages/ExploreVCC';
 
 // etc...
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/about/economy" element={<Economic/>} />
           <Route path="/progressGallery" element={<ProgressGallery/>} />
           <Route path="/communityCenter" element={<CommunityCenter/>} />
+          <Route path="/communityCenter/exploreVCC" element={<ExploreVCC/>} />
     
        
           {/* Add more routes here */}
