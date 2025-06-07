@@ -9,7 +9,7 @@ import Arc5 from '../assets/construction Gallery/architecture Gallery/arc-5.jpg'
 import Arc6 from '../assets/construction Gallery/architecture Gallery/arc-6.jpg';
 import Arc7 from '../assets/construction Gallery/architecture Gallery/arc-7.jpg';
 
-import Elec1 from '../assets/construction Gallery/electrical/elc-1.jpg';
+import Elec1 from '../assets/construction Gallery/electrical/elc-z1.jpg';
 import Elec2 from '../assets/construction Gallery/electrical/elc-2.jpg';
 import Elec3 from '../assets/construction Gallery/electrical/elc-3.jpg';
 
