@@ -1,5 +1,6 @@
 import React from 'react';
 import Communitycenter from '../assets/CommunityCenter.jpg'
+import { Link } from 'react-router-dom';
 
 const CommunityCenter = () => {
     return (
@@ -8,7 +9,7 @@ const CommunityCenter = () => {
                 {/* Header with Construction Theme */}
                 <div className="text-center mb-12">
                     <span className="inline-block px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium mb-4">
-                         Building Smarter Futures
+                        Building Smarter Futures
                     </span>
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                         Laying the Foundation for <span className="text-green-600">Community Growth</span>
@@ -76,9 +77,11 @@ const CommunityCenter = () => {
                                 <span className="text-yellow-600 mr-2">💪</span>
                                 Join Us in Empowering Communities
                             </h3>
-                            <button className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg shadow-md transition-colors">
-                                Get Involved Today
-                            </button>
+                            <Link to={'/communityCenter/exploreVCC'}>
+                                <button className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg shadow-md transition-colors">
+                                    Explore VCC
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
