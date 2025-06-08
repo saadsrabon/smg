@@ -1,29 +1,29 @@
 import React from 'react';
 
 // Import all images directly (update paths to match your actual files)
-import Arc1 from '../assets/construction Gallery/architecture Gallery/arc-1.jpg';
-import Arc2 from '../assets/construction Gallery/architecture Gallery/arc-2.jpg';
-import Arc3 from '../assets/construction Gallery/architecture Gallery/arc-3.jpg';
-import Arc4 from '../assets/construction Gallery/architecture Gallery/arc-4.jpg';
-import Arc5 from '../assets/construction Gallery/architecture Gallery/arc-5.jpg';
-import Arc6 from '../assets/construction Gallery/architecture Gallery/arc-6.jpg';
-import Arc7 from '../assets/construction Gallery/architecture Gallery/arc-7.jpg';
+import Arc1 from '../assets/constructionGallery/architecture Gallery/arc-1.jpg';
+import Arc2 from '../assets/constructionGallery/architecture Gallery/arc-2.jpg';
+import Arc3 from '../assets/constructionGallery/architecture Gallery/arc-3.jpg';
+import Arc4 from '../assets/constructionGallery/architecture Gallery/arc-4.jpg';
+import Arc5 from '../assets/constructionGallery/architecture Gallery/arc-5.jpg';
+import Arc6 from '../assets/constructionGallery/architecture Gallery/arc-6.jpg';
+import Arc7 from '../assets/constructionGallery/architecture Gallery/arc-7.jpg';
 
-import Elec1 from '../assets/construction Gallery/electrical/elc-z1.jpg';
-import Elec2 from '../assets/construction Gallery/electrical/elc-2.jpg';
-import Elec3 from '../assets/construction Gallery/electrical/elc-3.jpg';
+import Elec1 from '../assets/constructionGallery/electrical/elc-1.jpg';
+import Elec2 from '../assets/constructionGallery/electrical/elc-2.jpg';
+import Elec3 from '../assets/constructionGallery/electrical/elc-3.jpg';
 
-import Plumb1 from '../assets/construction Gallery/plumbing/plmb-1.jpg';
-import Plumb2 from '../assets/construction Gallery/plumbing/plmb-2.jpg';
+import Plumb1 from '../assets/constructionGallery/plumbing/plmb-1.jpg';
+import Plumb2 from '../assets/constructionGallery/plumbing/plmb-2.jpg';
 
-import Struct1 from '../assets/construction Gallery/structural/building_foundation_1.webp';
-import Struct2 from '../assets/construction Gallery/structural/building_foundation_4.webp';
-import Struct3 from '../assets/construction Gallery/structural/PHOTO-2023-10-09-07-20-41.webp';
-import Struct4 from '../assets/construction Gallery/structural/PHOTO-2023-10-17-06-44-5222222.webp';
-import Struct5 from '../assets/construction Gallery/structural/PHOTO-2024-03-18-00-29-22.webp';
-import Struct6 from '../assets/construction Gallery/structural/PHOTO-2024-06-19-06-26-53.webp';
-import Struct7 from '../assets/construction Gallery/structural/PHOTO-2024-08-19-03-28-03.webp';
-import Struct8 from '../assets/construction Gallery/structural/struc-1.jpg';
+import Struct1 from '../assets/constructionGallery/structural/building_foundation_1.webp';
+import Struct2 from '../assets/constructionGallery/structural/building_foundation_4.webp';
+import Struct3 from '../assets/constructionGallery/structural/PHOTO-2023-10-09-07-20-41.webp';
+import Struct4 from '../assets/constructionGallery/structural/PHOTO-2023-10-17-06-44-5222222.webp';
+import Struct5 from '../assets/constructionGallery/structural/PHOTO-2024-03-18-00-29-22.webp';
+import Struct6 from '../assets/constructionGallery/structural/PHOTO-2024-06-19-06-26-53.webp';
+import Struct7 from '../assets/constructionGallery/structural/PHOTO-2024-08-19-03-28-03.webp';
+import Struct8 from '../assets/constructionGallery/structural/struc-1.jpg';
 
 import { useState } from 'react';
 
