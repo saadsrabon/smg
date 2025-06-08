@@ -183,7 +183,7 @@ const ProgressGallery = () => {
                   <p className="text-gray-600">Total Patients Served</p>
                 </div>
                 <div className="bg-yellow-50 rounded-lg p-6 text-center">
-                  <h4 className="text-2xl font-bold text-yellow-600">₹81,100</h4>
+                  <h4 className="text-2xl font-bold text-yellow-600">81,100</h4>
                   <p className="text-gray-600">Total Revenue</p>
                 </div>
               </div>
@@ -279,11 +279,11 @@ const ProgressGallery = () => {
 
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-orange-50 rounded-lg p-6 text-center">
-                  <h4 className="text-2xl font-bold text-orange-600">₹6,17,500</h4>
+                  <h4 className="text-2xl font-bold text-orange-600">6,17,500</h4>
                   <p className="text-gray-600">Total Disbursed</p>
                 </div>
                 <div className="bg-purple-50 rounded-lg p-6 text-center">
-                  <h4 className="text-2xl font-bold text-purple-600">₹37,500</h4>
+                  <h4 className="text-2xl font-bold text-purple-600">37,500</h4>
                   <p className="text-gray-600">Total Savings</p>
                 </div>
                 <div className="bg-indigo-50 rounded-lg p-6 text-center">
@@ -332,15 +332,15 @@ const ProgressGallery = () => {
 
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-blue-50 rounded-lg p-6 text-center">
-                  <h4 className="text-2xl font-bold text-blue-600">₹42,000</h4>
+                  <h4 className="text-2xl font-bold text-blue-600">42,000</h4>
                   <p className="text-gray-600">Teacher Salaries</p>
                 </div>
                 <div className="bg-yellow-50 rounded-lg p-6 text-center">
-                  <h4 className="text-2xl font-bold text-yellow-600">₹230</h4>
+                  <h4 className="text-2xl font-bold text-yellow-600">230</h4>
                   <p className="text-gray-600">Stationary</p>
                 </div>
                 <div className="bg-green-50 rounded-lg p-6 text-center">
-                  <h4 className="text-2xl font-bold text-green-600">₹42,230</h4>
+                  <h4 className="text-2xl font-bold text-green-600">42,230</h4>
                   <p className="text-gray-600">Total Expenditure</p>
                 </div>
               </div>
@@ -410,7 +410,7 @@ const ProgressGallery = () => {
                   <p className="text-green-100">Total Patients</p>
                 </div>
                 <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-lg p-6 text-center text-white">
-                  <h4 className="text-2xl font-bold">₹6.6L</h4>
+                  <h4 className="text-2xl font-bold">6.6L</h4>
                   <p className="text-yellow-100">Total Funding</p>
                 </div>
                 <div className="bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg p-6 text-center text-white">
@@ -427,15 +427,15 @@ const ProgressGallery = () => {
                     <ul className="text-gray-600 space-y-1">
                       <li>• Served 1,748 patients across 2023-2024</li>
                       <li>• Maintained 551 active card holders</li>
-                      <li>• Generated ₹1.6L in revenue</li>
+                      <li>• Generated 1.6L in revenue</li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-700 mb-2">Community Development</h4>
                     <ul className="text-gray-600 space-y-1">
-                      <li>• Purchased essential equipment worth ₹6.2L</li>
-                      <li>• Facilitated ₹37.5K in community savings</li>
-                      <li>• Invested ₹42.2K in education</li>
+                      <li>• Purchased essential equipment worth 6.2L</li>
+                      <li>• Facilitated 37.5K in community savings</li>
+                      <li>• Invested 42.2K in education</li>
                     </ul>
                   </div>
                 </div>
